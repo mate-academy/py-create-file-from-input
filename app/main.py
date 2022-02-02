@@ -1,11 +1,11 @@
-def create_name_file(name_file, input_line):
-    with open(name_file + '.txt', 'w') as file:
-        file.writelines(input_line)
+def create_file(file_name, content):
+    with open(file_name + '.txt', 'w') as file:
+        file.writelines(content)
 
 
 def app():
     content = []
-    name_file = input("Enter name of the file: ")
+    file_name = input("Enter name of the file: ")
     while True:
         input_line = input("Enter new line of content: ")
         if input_line == 'stop':
@@ -13,7 +13,7 @@ def app():
         else:
             content.append(input_line + '\n')
 
-    create_name_file(name_file, content)
+    create_file(file_name, content)
 
 
 if __name__ == "__main__":

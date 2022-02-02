@@ -7,7 +7,7 @@ def create_a_file_from_input():
             break
         else:
             with open(file_name+".txt", "a") as f:
-                f.write(next_line)
+                f.write(f"{next_line}\n")
 
 
 if __name__ == "__main__":

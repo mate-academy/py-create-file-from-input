@@ -4,7 +4,7 @@ def create_a_file():
         line = input("Enter next line of the content:\n")
         if line == "stop":
             break
-        with open(name + ".txt", "a+") as file:
+        with open(name + ".txt", "a") as file:
             file.write(f"{line}\n")
 
 

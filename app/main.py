@@ -6,8 +6,8 @@ def file_creating():
         line = input("Enter new line of content: ")
         if line == "stop":
             break
-        with open(file_name + ".txt", "a") as f:
-            f.write(line + "\n")
+        with open(file_name + ".txt", "a") as file:
+            file.write(line + "\n")
 
 
 if __name__ == "__main__":

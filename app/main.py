@@ -5,7 +5,7 @@ def create_a_file():
             content = input("Enter new line of content: ")
             if content == "stop":
                 break
-            file.writelines(content + '\n')
+            file.write(content + '\n')
 
 
 create_a_file()

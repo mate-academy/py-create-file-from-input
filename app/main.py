@@ -1,10 +1,9 @@
 def file_from_input():
     name = input("Enter name of the file: ")
-    is_runing = True
-    while is_runing:
+    while True:
         content = input("Enter new line of content: ")
         if content == "stop":
-            is_runing = False
+            break
         else:
             with open(f"{name}.txt", "a") as f:
                 f.write(f"{content}\n")

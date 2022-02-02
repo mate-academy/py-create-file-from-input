@@ -1,4 +1,4 @@
-def user_management_cli():
+def create_file():
     file_name = input("Input the name of file: ")
     print("File content: ")
 
@@ -8,9 +8,9 @@ def user_management_cli():
         if content.lower() == "stop":
             break
         else:
-            with open(file_name, "a") as f:
+            with open(file_name + ".txt", "a") as f:
                 f.write(content + "\n")
 
 
 if __name__ == "__main__":
-    user_management_cli()
+    create_file()

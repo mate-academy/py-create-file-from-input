@@ -8,5 +8,5 @@ while True:
     else:
         file_content += new_line + "\n"
 
-with open(file_name, "w") as f:
-    f.writelines(file_content)
+with open(file_name, "w") as file:
+    file.writelines(file_content)

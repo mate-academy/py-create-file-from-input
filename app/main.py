@@ -1,6 +1,6 @@
 def create_files():
     file_name = input("Enter name of the file: ")
-    if file_name:
+    if file_name != '':
         with open(file_name + ".txt", "a") as f:
             while True:
                 content = input("Enter new line of content: ")

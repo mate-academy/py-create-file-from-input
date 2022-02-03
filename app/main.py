@@ -9,4 +9,4 @@ while True:
         file_content += new_line + "\n"
 
 with open(file_name + ".txt", "w") as file:
-    file.writelines(file_content)
+    file.write(file_content)

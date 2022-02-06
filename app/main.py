@@ -2,13 +2,13 @@ def create_file():
     file_name = input("Input the name of file: ")
     print("File content: ")
 
-    while True:
-        content = input()
+    with open(file_name + ".txt", "a") as f:
+        while True:
+            content = input()
 
-        if content.lower() == "stop":
-            break
-        else:
-            with open(file_name + ".txt", "a") as f:
+            if content.lower() == "stop":
+                break
+            else:
                 f.write(content + "\n")
 
 

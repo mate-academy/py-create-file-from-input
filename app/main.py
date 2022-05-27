@@ -5,5 +5,3 @@ with open(f"{file_name}.txt", "w", encoding="utf8") as file:
     while line != "stop":
         line = input('Enter new line of content: ')
         file.write(f"{line}\n")
-
-print(f"Recording file - {file_name}.txt - is success")

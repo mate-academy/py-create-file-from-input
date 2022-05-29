@@ -1,10 +1,8 @@
 def file_creator():
-    print("Enter name of file:")
-    name_of_file = input()
+    name_of_file = input("Enter name of file:")
     with open(f'{name_of_file}.txt', 'a') as f:
         while True:
-            print("Enter new line of content:")
-            content = input()
+            content = input("Enter new line of content:")
             if content == 'stop':
                 break
             f.write(f"{content}\n")

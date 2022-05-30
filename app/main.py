@@ -1,4 +1,5 @@
-def app_for_creation_files(file_name=input("Enter name of the file: ")):
+def app_for_creation_files():
+    file_name = input("Enter name of the file: ")
 
     with open(f"{file_name}.txt", "a") as file:
         while True:

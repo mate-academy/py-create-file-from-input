@@ -5,4 +5,4 @@ with open(f"{file_name}.txt", "w") as f:
         line = input("Enter new line of content:")
         if line == "stop":
             break
-        f.write(f"{line}\n")
+        f.write(line + "\n")

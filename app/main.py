@@ -1,9 +1,9 @@
-a = input('Please enter the name of file')
-c = a + '.txt'
-f = open(c, 'w')
+client_input = input('Please enter the name of file')
+changed_name = client_input + '.txt'
+f = open(changed_name, 'w')
 while True:
-    b = input('Please add some context')
-    if b == 'stop':
+    client_file_input = input('Please add some context')
+    f.write(client_file_input + '\n')
+    if client_file_input == 'stop':
+        f.close()
         break
-    f.write(b)
-    f.write(' ')

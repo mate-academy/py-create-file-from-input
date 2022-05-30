@@ -13,4 +13,3 @@ with open(file, "w") as f:
         if content == "stop":
             break
         f.write(content + "\n")
-    f.close()

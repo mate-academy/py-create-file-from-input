@@ -1,6 +1,5 @@
-file_name = input("Enter name of the file: ")
-
-with open(f"{file_name}.txt", "a") as file:
+file_name = input("Enter name of the file: ") + ".txt"
+with open(file_name, "a") as file:
     while True:
         line_of_content = input("Enter new line of content: ")
         if line_of_content == "stop":

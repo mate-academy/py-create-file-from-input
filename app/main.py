@@ -6,6 +6,3 @@ def main():
             new_string = input('Enter new line of content: ')
             if new_string != 'stop':
                 f.write(new_string + '\n')
-
-
-if __name__ == "__main__": main()

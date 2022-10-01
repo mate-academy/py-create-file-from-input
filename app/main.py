@@ -10,7 +10,3 @@ def main():
             else:
                 break
         f.close()
-
-
-if __name__ == "__main__":
-    main()

@@ -1,9 +1,9 @@
 def main():
-    file_name = input("Enter name of the file:")
-    with open(file_name, "a") as f:
+    file_name = input("Enter name of the file: ")
+    with open(f"{file_name}.txt", "a") as f:
         while True:
-            file_content = input("Enter new line of content:")
-            if file_content.lower() == "exit":
+            file_content = input("Enter new line of content: ")
+            if file_content.lower() == "stop":
                 print("Exiting")
                 break
             f.write(f"{file_content}\n")

@@ -18,7 +18,7 @@ def main() -> None:
                 file_obj.write(line + "\n")
 
     else:
-        print("Warning! The filename cannot be empty. Program stopped.")
+        print("Warning! The filename cannot be empty. Program stopped!")
 
 
 if __name__ == "__main__":

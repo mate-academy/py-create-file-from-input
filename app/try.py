@@ -6,7 +6,7 @@ def main():
             if content != "stop":
                 file.write(content)
             else:
-                break
+                return
 
 
 if __name__ == "__main__":

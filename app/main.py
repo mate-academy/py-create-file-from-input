@@ -5,7 +5,7 @@ def main() -> None:
         while True:
             text = input("Enter new line of content: ")
             file.write(text + "\n")
-            print(f.write(f"{text}\n"))
+            print(file.write(f"{text}\n"))
             if text == "stop":
                 break
     with open(f"{file_name}.txt", "r") as f:

@@ -6,7 +6,7 @@ def main() -> None:
             file.write(text + "\n")
             if text == "stop":
                 break
-            
+
 
 if __name__ == "__main__":
     main()

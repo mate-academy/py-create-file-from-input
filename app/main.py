@@ -5,9 +5,9 @@ def main() -> None:
     while new_line != "stop":
         list_of_lines.append(new_line)
         new_line = input("Enter new line of content: ")
-    with open(file_name + ".txt", "a") as f:
+    with open(file_name + ".txt", "a") as new_file:
         for line in list_of_lines:
-            f.write(line + "\n")
+            new_file.write(line + "\n")
 
 
 if __name__ == "__main__":

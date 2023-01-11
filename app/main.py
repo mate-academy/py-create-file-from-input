@@ -8,6 +8,5 @@ def main() -> None:
             file.write(new_line + "\n")
 
 
-
 if __name__ == "__main__":
     main()

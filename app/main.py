@@ -4,8 +4,9 @@ def main():
         while True:
             line = input("Enter new line of content: ")
             if line == "stop":
-                break
-            file.write(f"{line}\n")
+                return False
+            else:
+                file.write(f"{line}\n")
 
 
 if __name__ == "__main__":

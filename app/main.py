@@ -1,6 +1,6 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
-    content = ''
+    content = ""
     result = []
     while content != "stop":
         content = input("Enter new line of content: ")

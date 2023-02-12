@@ -8,7 +8,7 @@ def main() -> None:
             break
         content += new_line + "\n"
     with open(full_name, "a") as f:
-        f.writelines(content)
+        f.write(content)
 
 
 if __name__ == "__main__":

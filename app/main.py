@@ -1,4 +1,3 @@
-
 def main() -> None:
     file_name = input("Enter name of the file: ")
     data = ""
@@ -13,4 +12,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

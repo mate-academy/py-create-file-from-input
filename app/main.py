@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     text_file = ""
     text = input("Enter name of the file: ")
     new_file = open(text + ".txt", "w")

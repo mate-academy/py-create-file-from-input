@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file:")
     with open(file_name, "a") as f:
         new_line = input("Enter new line of content:")

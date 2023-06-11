@@ -6,8 +6,8 @@ def main() -> None:
         new_line = input("Enter new line of content: ")
         if new_line != "stop":
             content += new_line + "\n"
-    with open(file_name + ".txt", "w") as new_file:
-        new_file.write(content)
+    with open(file_name + ".txt", "w") as n_file:
+        n_file.write(content)
 
 
 if __name__ == "__main__":

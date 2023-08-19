@@ -1,4 +1,4 @@
-def main() -> str:
+def main() -> int:
     file_name = input("Enter name of the file: ")
     content = []
 

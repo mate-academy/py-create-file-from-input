@@ -18,11 +18,10 @@ def main() -> None:
     file_name_with_extension = file_name + ".txt"
     create_file_with_content(file_name_with_extension, content)
 
-    print(f"File name: \"{file_name_with_extension}\"")
+    print(f'File name: \"{file_name_with_extension}\"')
     print("File content:")
     print(content)
 
 
 if __name__ == "__main__":
     main()
-

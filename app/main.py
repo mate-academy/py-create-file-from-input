@@ -3,7 +3,7 @@ def create_file(file_name: str, content: str) -> None:
         f.write(content)
 
 
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
 
     content = str()

@@ -6,7 +6,7 @@ def main() -> None:
     filename = input("Enter name of the file: ")
     if not filename:
         raise EmptyFilenameError("Filename must be not empty")
-    content = ""    
+    content = ""
     while True:
         input_text = input("Enter new line of content: ")
         if input_text == "stop":

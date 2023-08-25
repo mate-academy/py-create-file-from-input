@@ -1,10 +1,7 @@
 def main() -> None:
     file_name = input("Enter name of the file: ")
     with open(f"{file_name}.txt", "w") as content_file:
-        while True:
-            content = input("Enter new line of content: ")
-            if content == "stop":
-                break
+        while (content := input("Enter new line of content: ")) != "stop":
             content_file.write(f"{content}\n")
 
 

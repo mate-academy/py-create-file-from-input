@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     try:
         with open(file_name + ".txt", "a") as work_file:
@@ -8,7 +8,7 @@ def main():
                 if line == "stop":
                     stop = True
                 else:
-                    work_file.write(line + '\n')
+                    work_file.write(line + "\n")
     except FileNotFoundError:
         print(f"File '{file_name}.txt' not found.")
 

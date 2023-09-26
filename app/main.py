@@ -3,7 +3,7 @@ def main() -> None:
     file_name += ".txt"
     content_lines = []
 
-    while True:
+    while 1 > 0:
         line = input("Enter new line of content: ")
         if line.lower() == "stop":
             break

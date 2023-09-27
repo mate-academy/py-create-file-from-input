@@ -10,8 +10,7 @@ def main() -> None:
         content_lines.append(line)
 
     with open(f"{file_name}.txt", "w") as file:
-        file.write(f"File name: \"{file_name}.txt\"\n")
-        file.write("File content:\n")
+
         for line in content_lines:
             file.write(f"{line}\n")
 

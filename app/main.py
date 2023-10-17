@@ -1,6 +1,3 @@
-def main():
-
-    pass
 def main() -> None:
     file_name = input("Enter name of the file: ")
     file_name += ".txt"
@@ -17,3 +14,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    main()

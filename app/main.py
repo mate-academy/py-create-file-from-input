@@ -6,8 +6,8 @@ def main() -> None:
         user_content = input("Enter new line of content: ")
         content.append(user_content)
 
-    with open(filename, "w") as f:
-        for text in content:
+    with open(filename + ".txt", "w") as f:
+        for text in content[:-1]:
             f.write(text + "\n")
 
 

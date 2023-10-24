@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     with open(input("Enter name of the file: ") + ".txt", "w") as f:
         valid = True
         while valid:

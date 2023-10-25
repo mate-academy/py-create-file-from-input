@@ -3,11 +3,11 @@ def main() -> None:
     content_lines = []
     while True:
         line = input("Enter new line of content: ")
-        if line.lower() == 'stop':
+        if line.lower() == "stop":
             break
         content_lines.append(line)
     file_path = f"{file_name}.txt"
-    with open(file_path, 'w') as file:
+    with open(file_path, "w") as file:
         file.write('\n'.join(content_lines))
 
 

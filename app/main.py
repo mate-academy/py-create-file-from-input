@@ -8,7 +8,7 @@ def main() -> None:
         content_lines.append(line)
     file_path = f"{file_name}.txt"
     with open(file_path, "w") as file:
-        file.write('\n'.join(content_lines))
+        file.write("\n".join(content_lines))
 
 
 if __name__ == "__main__":

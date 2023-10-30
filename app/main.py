@@ -12,7 +12,7 @@ def main() -> None:
     with open(f"{filename}.txt", "w") as file:
         file.write("\n".join(content))
 
-    print(f"File name: \"{filename}.txt\"")
+    print(f"File name: \'{filename}.txt\'")
     print("File content: ")
     for line in content:
         print(line)

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     file_content = ""
 
@@ -6,7 +6,7 @@ def main():
         new_line = input("Enter new line of content: ")
         if (new_line == "stop"):
             break
-        file_content += f"{new_line}\\n"
+        file_content += f"{new_line}\n"
 
     with open(f"{file_name}.txt", "w") as f:
         f.write(file_content)

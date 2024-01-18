@@ -11,7 +11,7 @@ class FileNameError(Exception):
         return self.info
 
 
-def main():
+def main() -> None:
     def validating_filename(name: str) -> Exception:
         def is_valid_name(name: str) -> bool:
             bad = {
@@ -37,7 +37,6 @@ def main():
             file=validating_filename(input("Enter name of the file: ")),
             mode="x"
         )
-        file = open(new_file.name, "a")
     except FileExistsError as error:
         print(error)
         main() if input("try again? : (y)") == "y" else exit()
@@ -45,14 +44,13 @@ def main():
     content = ""
     while True:
         input_txt = input("Enter new line of content: ")
-
         if input_txt == "":
             content += "\n"
-            file.write(f"{content}")
         if input_txt == "stop":
             break
         content += f"{input_txt}\n"
 
+    file = open(new_file.name, "a")
     file.write(f"{content}")
     file.close()
 

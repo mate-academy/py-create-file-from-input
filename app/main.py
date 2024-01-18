@@ -17,7 +17,7 @@ def main() -> None:
             bad = {
                 " ", ",", "-",
                 "/", "\\", ":",
-                "*", "?", "\"",
+                "*", "?", '\"',
                 "'", ">", "<",
                 "|", "&"
             }
@@ -50,7 +50,7 @@ def main() -> None:
             break
         content += f"{input_txt}\n"
 
-    file = open(new_file.name, "a")
+    file = open(new_file.name, "w")
     file.write(f"{content}")
     file.close()
 

@@ -50,9 +50,9 @@ def main() -> None:
             break
         content += f"{input_txt}\n"
 
-    file = open(new_file.name, "w")
-    file.write(f"{content}")
-    file.close()
+    file_obj = open(new_file.name, "w")
+    file_obj.write(f"{content}")
+    file_obj.close()
 
 
 if __name__ == "__main__":

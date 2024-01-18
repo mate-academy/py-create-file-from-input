@@ -34,7 +34,7 @@ def main():
 
     try:
         new_file = open(
-            file=f"{validating_filename(input("Enter name of the file: "))}",
+            file=validating_filename(input("Enter name of the file: ")),
             mode="x"
         )
         file = open(new_file.name, "a")

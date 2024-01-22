@@ -5,7 +5,7 @@ def main() -> None:
         while content != "stop":
             content = input("Enter new line of content: ")
             if content != "stop":
-                f.write(content + "/n")
+                f.write(content + "\n")
 
 
 if __name__ == "__main__":

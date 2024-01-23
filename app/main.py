@@ -1,5 +1,5 @@
 def main() -> None:
-    file_name = f"{input("Enter name of the file: ")}.txt"
+    file_name = f"{input('Enter name of the file: ')}.txt"
     with open(file_name, "a") as file:
         while True:
             line = input("Enter new line of content: ")

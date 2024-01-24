@@ -1,15 +1,15 @@
 def main() -> None:
-    file_name = input("Enter file name: ")
+    file_name = input("Enter name of the file: ")
     file_text = ""
     while True:
-        user_text = input("Enter a text to save it to file: ")
+        user_text = input("Enter new line of content: ")
 
         if user_text == "stop":
             break
 
         file_text += f"{user_text}\n"
 
-    with open(file_name, "w") as file:
+    with open(f"{file_name}.txt", "w") as file:
         file.write(file_text)
 
 

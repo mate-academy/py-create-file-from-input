@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter file name: ")
     file_text = ""
     while True:

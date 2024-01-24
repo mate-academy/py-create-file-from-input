@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     name_of_the_file = input("Enter name of the file: ") + ".txt"
 
     new_line_of_content = input("Enter new line of content: ")

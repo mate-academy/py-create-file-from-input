@@ -13,8 +13,8 @@ def main() -> None:
         for line in content:
             file.write(line + "\n")
 
-    print(f'File "{file_name_with_extention}" has been created '
-          f'with provided content.')
+    print(f"File '{file_name_with_extention}' "
+          f"has been created with provided content.")
 
 
 if __name__ == "__main__":

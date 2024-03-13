@@ -3,7 +3,7 @@ def main() -> None:
     file_content = []
 
     while True:
-        line = input("Enter new line of content (enter 'stop' to finish): ")
+        line = input("Enter new line of content: ")
         if line.lower() == "stop":
             break
         file_content.append(line)

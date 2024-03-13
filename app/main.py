@@ -14,7 +14,7 @@ def main() -> None:
         for line in file_content:
             f.write(line + "\n")
 
-    print(f"File name: \"{file_extension}\"")
+    print(f"File name: \'{file_extension}\'")
     print("File content:")
     for line in file_content:
         print(f"# {line}")

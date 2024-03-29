@@ -7,6 +7,7 @@ def main() -> None:
 
             if file_content == "stop":
                 break
+
             file.write(file_content + "\n")
 
 

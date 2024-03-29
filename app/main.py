@@ -1,5 +1,5 @@
-def main():
-    def create_file():
+def main() -> None:
+    def create_file() -> None:
         file_name = input("Enter name of the file: ")
         content = []
         while True:

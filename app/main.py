@@ -1,6 +1,6 @@
 def main():
     def create_file():
-        file_name = input("Enter name of the title: ")
+        file_name = input("Enter name of the file: ")
         content = []
         while True:
             line = input("Enter new line of content: ")

@@ -1,5 +1,6 @@
 def main() -> None:
     line_list = []
+
     filename = input("Enter name of the file: ") + ".txt"
     while True:
         line = input("Enter new line of content: ")

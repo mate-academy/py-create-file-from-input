@@ -8,10 +8,10 @@ def main() -> None:
         else:
             break
 
-    f = open(filename, "w")
+    new_file = open(filename, "w")
     for line in text:
-        f.write(line + "\n")
-    f.close()
+        new_file.write(line + "\n")
+    new_file.close()
 
 
 if __name__ == "__main__":

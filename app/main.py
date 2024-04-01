@@ -1,5 +1,5 @@
 def main() -> None:
-    file_name = input("Enter name of the file: ") + ".txt"
+    file_name = input("Enter name of the file: ")
     content = []
     while True:
         line = input("Enter new line of content: ")
@@ -7,13 +7,8 @@ def main() -> None:
             break
         content.append(line)
 
-    with open(file_name, "w") as f:
-        for line in content:
-            f.write(line + "\n")
-    print(f"\nFile name: \"{file_name}\"")
-    print("File content:")
-    for line in content:
-        print(f"# {line}")
+    with open(file_name + ".txt", "w") as file:
+        file.write('\n'.join(content))
 
 
 if __name__ == "__main__":

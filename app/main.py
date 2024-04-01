@@ -17,7 +17,7 @@ def main() -> None:
     file_name += ".txt"
     created_file(file_name, content)
 
-    print(f"File name: \"{file_name}\"")
+    print(f'File name: "{file_name}"')
     print("File content:")
     for line in content:
         print(f"# {line}")

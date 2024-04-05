@@ -1,6 +1,11 @@
-def main():
-    # write your code here
-    pass
+def main() -> None:
+    with open(input("Enter name of the file: ") + ".txt", "w") as file:
+        while 1:
+            content = input("Enter new line of content: ")
+            if content == "stop":
+                break
+
+            file.write(content + "\n")
 
 
 if __name__ == "__main__":

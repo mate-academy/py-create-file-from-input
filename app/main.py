@@ -11,7 +11,7 @@ def main() -> None:
         for el in content:
             file.write(el + "\n")
 
-        print(f"\nFile name: \"{file}\"")
+        print(f"\nFile name: \'{file}\'")
         print("File content:")
         for line in content:
             print(line)

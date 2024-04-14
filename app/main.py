@@ -12,7 +12,7 @@ def main() -> None:
         for line in content:
             f.write(line + "\n")
 
-    print(f"File name: \"{name}.txt\"")
+    print(f'File name: "{name}.txt"')
     print("File content:")
     for line in content:
         print(f"# {line}")

@@ -16,7 +16,7 @@ def main() -> None:
         for line in file_content:
             file.write(line + "\n")
 
-    print(f"File name: \"{file_path}\"")
+    print(f'File name: \"{file_path}\"')
     print("File content:")
     for line in file_content:
         print("#", line)

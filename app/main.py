@@ -1,25 +1,19 @@
 def main() -> None:
-    file_name = input("Enter name of the file: ") + ".txt"
+    file_name = input("Enter name of the file: ").strip()
+    if not file_name.endswith(".txt"):
+        file_name += ".txt"
 
-    lines_of_content = []
-
-    print("Enter new line of content: ")
+    lines = []
     while True:
-        line = input()
+        line = input("Enter new line of content: ").strip()
         if line.lower() == "stop":
             break
-        lines_of_content.append(line)
+        lines.append(line)
 
-    try:
-        with open(file_name, "w") as file:
-            for line in lines_of_content:
-                file.write(line + "\n")
-    except FileNotFoundError:
-        pass
-    except PermissionError:
-        pass
-    except IOError:
-        pass
+    with open(file_name, "w") as file:
+        file.write("\n".join(lines))
+
+    print(f"file '{file_name}' created successfully")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
-def main():
-    file_name = input("Enter name of the file: ")
+def main() -> None:
+    file_name = input("Enter name of the file: ") + ".txt"
 
     with open(file_name, "a") as file:
         input_ = ""
@@ -10,7 +10,7 @@ def main():
             file.write(f"{input_}\n")
 
     with open(file_name, "r") as file:
-        print(f"File name: {file_name}.txt\nFile content: ")
+        print(f"File name: {file_name}\nFile content: ")
         for line in file:
             print(line, end="")
 

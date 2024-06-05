@@ -12,7 +12,7 @@ def create_file() -> None:
         for line in content:
             file.write(line + "\n")
 
-    print(f"File name: \"{file_name}\"")
+    print(f"File name: \'{file_name}\'")
     print("File content:")
     for line in content:
         print(f"# {line}")

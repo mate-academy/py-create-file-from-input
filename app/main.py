@@ -6,6 +6,5 @@ def main() -> object:
             f.write(new_line)
 
 
-
 if __name__ == "__main__":
     main()

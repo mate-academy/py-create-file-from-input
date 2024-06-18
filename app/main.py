@@ -1,8 +1,6 @@
-def main() -> None:
-    while True:
-        file_name = input("Enter name of the file: ")
-        if file_name.endswith(".txt") and file_name != "":
-            break
+def main():
+    file_name = (input("Enter name of the file: ") + ".txt")
+    print(file_name)
 
     while True:
         text = input("Enter new line of content: ")

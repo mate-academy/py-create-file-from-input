@@ -1,4 +1,4 @@
-def create_text_file():
+def create_text_file() -> None:
     file_name = input("Enter name of the file: ")
 
     content_lines = []
@@ -13,10 +13,12 @@ def create_text_file():
         for line in content_lines:
             file.write(line + "\n")
 
-    print(f"file {file_path} created successfully with {len(content_lines)} lines of content")
+    print(f"file {file_path}"
+          f"created successfully with {len(content_lines)}"
+          f"lines of content")
 
 
-def main():
+def main() -> None:
 
     create_text_file()
 

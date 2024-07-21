@@ -8,7 +8,6 @@ def main() -> None:
             break
         content += line + "\n"
 
-    print(content)
     with open(file_name + ".txt", "w") as f:
         f.write(content)
 

@@ -1,6 +1,7 @@
 def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
     content = ""
+
     while True:
         line = input("Enter new line of content: ")
         if line.lower() == "stop":

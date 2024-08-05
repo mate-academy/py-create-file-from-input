@@ -18,7 +18,7 @@ def main() -> None:
     print(f"# File name: \"{file_name}\"")
     print("# File content:")
     for line in content_lines:
-        print(f"# {line}")
+        print(f"{line}")
 
 
 if __name__ == "__main__":

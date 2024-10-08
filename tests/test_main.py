@@ -1,8 +1,6 @@
 import os
-
 import pytest
 from pytest import MonkeyPatch
-
 from app.main import main
 
 
@@ -36,7 +34,7 @@ class CleanUpFile:
     ]
 )
 def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
-    inputs = [file_basename, *content, "stop"]
+    inputs = [file_basename, *content, "stop"]  # Включаємо "stop" для завершення введення
     input_messages = []
 
     def mock_input(text: str):

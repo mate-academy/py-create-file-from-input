@@ -13,7 +13,7 @@ def main() -> None:
             file.write(line + "\n")
 
     print(f"# File name: \"{file_name}\"\n"
-          f"# File content:\n" + "\n".join(content_lines)) # noqa
+          f"# File content:\n" + "\n".join(content_lines))  # noqa: E231
 
 
 if __name__ == "__main__":

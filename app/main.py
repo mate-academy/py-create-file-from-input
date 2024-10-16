@@ -12,8 +12,8 @@ def main() -> None:
         for line in content_lines:
             file.write(line + "\n")
 
-    print(f"# File name: \"{file_name}\"\n"
-          f"# File content:\n" + "\n".join(content_lines))  # noqa: E231
+    print(f'# File name: "{file_name}"\n'
+          f"# File content:\n" + "\n".join(content_lines))
 
 
 if __name__ == "__main__":

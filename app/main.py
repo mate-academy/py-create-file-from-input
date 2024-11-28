@@ -20,6 +20,7 @@ def main() -> None:
     with open(file_name, "w") as file:
         file.write("\n".join(content_lines))  # Write all lines, joined by newlines
 
+    # Print success message
     print(f'File "{file_name}" created successfully.')
 
 

@@ -1,4 +1,7 @@
-def main():
+def main() -> None:
+    """
+    Main function to create a text file based on user input.
+    """
     # Ask for the file name
     file_name = input("Enter name of the file: ")
     file_name = f"{file_name}.txt"  # Add .txt extension

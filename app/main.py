@@ -1,3 +1,4 @@
+
 def main() -> None:
     name = input("Enter name of the file: ")
 

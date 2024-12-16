@@ -1,16 +1,17 @@
 def main() -> None:
-    print("Enter name of the file: ")
-    file_name = input()
+    file_name = input("Enter name of the file: ")
     file_name += ".txt"
+    file_content = []
 
     while True:
-        print("Enter new line of content:")
-        file_content = input()
-
-        if file_content == "stop":
+        content = input("Enter new line of content: ")
+        if content == "stop":
             break
-        with open(file_name, "a") as f:
-            f.write(f"{file_content}\n")
+        file_content.append(content)
+
+    with open(file_name, "a") as f:
+        for line in file_content:
+            f.write(f"{line}\n")
 
 
 if __name__ == "__main__":

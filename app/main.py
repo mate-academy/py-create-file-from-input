@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     filename = input("Enter name of the file: ").strip() + ".txt"
     with open(filename, "a") as file:
         while True:
@@ -8,9 +8,7 @@ def main():
             file.write(line + "\n")
 
 
-
 if __name__ == "__main__":
     name = input("Enter file name (without extension): ")
     message = input("Enter message (type 'stop' to exit): ")
     main()
-

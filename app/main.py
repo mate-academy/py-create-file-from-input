@@ -1,11 +1,19 @@
-def main():
-    name = input("Enter name of the file:")
-    my_file = open(name, "a")
-    while True:
-        content = my_file.write(input('Enter new line of content:'))
-        if content == "stop" or content == "Stop":
-            break
+def main() -> None:
+    input_line = input("Enter name of the file: ")
+    input_data = [input_line]
 
+    while True:
+        input_line = input("Enter new line of content: ")
+        if input_line == "stop":
+            break
+        input_data.append(input_line)
+
+    result_file = open(f"{input_data[0]}.txt", "x")
+
+    for line in range(1, len(input_data)):
+        result_file.write(f"{input_data[line]}\n")
+
+    result_file.close()
 
 
 if __name__ == "__main__":

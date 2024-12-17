@@ -1,6 +1,6 @@
-def main():
-    a = input("Enter name of the file: ")
-    file_name = f"{a}.txt"
+def main() -> None:
+    usr_inp = input("Enter name of the file: ")
+    file_name = f"{usr_inp}.txt"
     content = False
     while True:
         user_input = input("Enter new line of content: ")
@@ -11,6 +11,7 @@ def main():
             content = True
     if not content:
         open(file_name, "w").close()
+
 
 if __name__ == "__main__":
     main()

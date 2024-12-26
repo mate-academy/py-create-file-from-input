@@ -1,10 +1,10 @@
 def main() -> None:
-    file_name = input("Enter name of th file name:")
+    file_name = input("Enter name of the file: ")
     if not file_name.endswith(".txt"):
         file_name += ".txt"
     content = []
-    line = input("Enter new line of content: ")
     while True:
+        line = input("Enter new line of content: ")
         if line.lower() == "stop":
             break
         content.append(line)

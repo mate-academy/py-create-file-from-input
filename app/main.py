@@ -2,23 +2,24 @@ import os
 
 
 def main():
-    file_name = input("Enter the name of the file without extensions. Just the name:  ")
+    file_name = input("Enter the name of the file without extensions:  ")
     check_type(file_name)
-    
+
     with open(file_name + ".txt", "a") as file:
         while True:
-            next_line = input("Next line, please. Type in 'stop' to quit input:  ")
+            next_line = input("Next line. Type 'stop' to quit: ")
             if next_line.lower() == "stop":
                 break
-            else: 
+            else:
                 file.write(next_line + "\n")
-    
-    print(f"File name: {file_name}.txt \nFile content:\n {read_lines(file_name + '.txt')}")
+
+    print(f"File name: {file_name}.txt \n")
+    print("File content:\n")
+    print(f"{read_lines(file_name + '.txt')}")
 
 
 def check_type(file_name: str) -> None:
     _, extension = os.path.splitext(file_name)
-    
     if extension and extension != '.txt':
         raise ValueError("Error: The file must be a .txt file")
 

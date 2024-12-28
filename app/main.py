@@ -2,12 +2,12 @@ import os
 
 
 def main() -> None:
-    file_name = input("Enter the name of the file without extensions:  ")
+    file_name = input("Enter name of the file: ")
     check_type(file_name)
 
     with open(file_name + ".txt", "a") as file:
         while True:
-            next_line = input("Next line. Type 'stop' to quit: ")
+            next_line = input("Enter new line of content: ")
             if next_line.lower() == "stop":
                 break
             else:

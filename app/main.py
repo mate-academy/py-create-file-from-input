@@ -1,7 +1,7 @@
 import os
 
 
-def main():
+def main() -> None:
     file_name = input("Enter the name of the file without extensions:  ")
     check_type(file_name)
 
@@ -20,7 +20,7 @@ def main():
 
 def check_type(file_name: str) -> None:
     _, extension = os.path.splitext(file_name)
-    if extension and extension != '.txt':
+    if extension and extension != ".txt":
         raise ValueError("Error: The file must be a .txt file")
 
 

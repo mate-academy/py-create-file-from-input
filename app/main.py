@@ -1,8 +1,8 @@
-def main():
+def main() -> None:
     name = input("Enter name of the file: ")
 
-    if not name.endswith('.txt'):
-        name += '.txt'
+    if not name.endswith(".txt"):
+        name += ".txt"
 
     lines = []
     while True:

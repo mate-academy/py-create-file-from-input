@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     enter_file_name = input("Enter file name: ")
     file_name = enter_file_name + ".txt"
     with open(file_name, "a") as f:

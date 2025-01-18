@@ -1,11 +1,18 @@
 def main() -> None:
-    enter_file_name = input("Enter file name: ")
-    file_name = enter_file_name + ".txt"
-    with open(file_name, "a") as f:
-        enter_text = input("Enter next line: ")
-        while enter_text != "stop":
-            f.write(f"{enter_text}\n")
-            enter_text = input("Enter next line: ")
+    file_name = input("Enter file name: ")
+
+    if not file_name.endswith(".txt"):
+        file_name += ".txt"
+    content_lines = []
+
+    while True:
+        line = input("Enter next line: ")
+        if line.lower() == "stop":
+            break
+        content_lines.append(line)
+
+    with open(file_name, "w") as file:
+        file.write("\n".join(content_lines))
 
 
 if __name__ == "__main__":

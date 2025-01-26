@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     sw_close = False
     file_name = input("Enter name of the file: ") + ".txt"
     with open(file_name, "w") as file:

@@ -3,7 +3,7 @@ def main():
 
     with open(file_name, "w") as file:
         while True:
-            line = input("Enter new line of content (or type 'stop' to finish): ")
+            line = input("Enter new line of content: ")
             if line.lower() == "stop":
                 break
             file.write(f"{line}\n")

@@ -1,4 +1,4 @@
-def create_text_file() -> None:
+def main() -> None:
     """Creates a text file with user-provided content."""
     file_name = input("Enter name of the file: ").strip()
     if not file_name:
@@ -21,6 +21,5 @@ def create_text_file() -> None:
     except Exception as e:
         print(f"Error writing to file: {e}")
 
-
 if __name__ == "__main__":
-    create_text_file()
+    main()

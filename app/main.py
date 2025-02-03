@@ -1,5 +1,6 @@
 def main() -> None:
-    file_name = f"{input("Enter name of the file: ")}.txt"
+    name = input("Enter name of the file: ")
+    file_name = f"{name}.txt"
     with open(file_name, "w") as f:
         f.close()
 

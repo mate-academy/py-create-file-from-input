@@ -1,4 +1,7 @@
-def main():
+from typing import Any
+
+
+def main() -> Any:
     file_name = input("Enter name of the file: ") + ".txt"
     content_lines = []
 
@@ -10,6 +13,6 @@ def main():
 
     with open(file_name, "w") as file:
         file.write("\n".join(content_lines))
-        
+
 if __name__ == "__main__":
     main()

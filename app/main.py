@@ -7,7 +7,7 @@ def main():
     lines = []
     while True:
         line = input("Enter new line of content: ")
-        if line.lower() == "stop":  # Користувач завершує введення
+        if line.lower() == "stop":
             break
         lines.append(line)
 

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
 
     if not file_name.endswith(".txt"):

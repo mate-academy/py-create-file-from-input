@@ -1,6 +1,6 @@
-def main():
+def main() -> None:
     name = input("Enter name of the file: ")
-    content = ''
+    content = ""
 
     while True:
         line = input("Enter new line of content: ")
@@ -10,7 +10,7 @@ def main():
 
         content += f"{line}\n"
 
-    with open(f"{name}.txt", 'w') as f:
+    with open(f"{name}.txt", "w") as f:
         f.write(content)
 
 

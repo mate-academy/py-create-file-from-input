@@ -8,7 +8,7 @@ def main() -> None:
         if text_to_save == "stop":
             break
 
-        with open(file_name,"a") as file:
+        with open(file_name, "a") as file:
             file.write(text_to_save + "\n")
 
 

@@ -1,5 +1,6 @@
 def main() -> None:
-    file_name = input("Enter name of the file: ")
+    file_basename = input("Enter name of the file: ")
+    file_name = f"{file_basename}.txt"
     file1 = open(file_name, "w")
     file1.close()
 
@@ -10,7 +11,8 @@ def main() -> None:
 
         with open(file_name, "a") as file:
             file.write(text_to_save + "\n")
-
+import os
+print("Current working directory:", os.getcwd())
 
 if __name__ == "__main__":
     main()

@@ -11,8 +11,7 @@ def main() -> None:
 
         with open(file_name, "a") as file:
             file.write(text_to_save + "\n")
-import os
-print("Current working directory:", os.getcwd())
+
 
 if __name__ == "__main__":
     main()

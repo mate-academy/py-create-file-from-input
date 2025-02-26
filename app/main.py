@@ -3,7 +3,7 @@ def main() -> None:
     information = []
     while True:
         print("To finish, enter 'stop'.")
-        info = input("Enter new line of content: ")git
+        info = input("Enter new line of content: ")
         if info.lower() == "stop":
             break
         information.append(info)

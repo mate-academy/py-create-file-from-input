@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     cmd_list = list()
     while True:
@@ -6,10 +6,10 @@ def main():
         if cmd.lower().strip() == "stop":
             break
         cmd_list.append(cmd)
-        
     with open(f"{file_name}.txt", "a") as fn:
         for i in cmd_list:
             fn.write(f"{i}\n")
+
 
 if __name__ == "__main__":
     main()

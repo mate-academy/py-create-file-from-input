@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     filename = input("Enter name of the file: ")
     filename = filename + ".txt"
     userinput = list()

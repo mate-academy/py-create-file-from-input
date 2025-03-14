@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
     content = []
 
@@ -8,7 +8,7 @@ def main():
             break
         content.append(line)
 
-    with open(file_name, "w") as file:
+    with open(file_name, "a") as file:
         file.write("\n".join(content))
 
 

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     filename = input("Enter name of the file: ")
     if not filename.endswith(".txt"):
         filename += ".txt"

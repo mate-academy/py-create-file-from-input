@@ -1,22 +1,16 @@
-def main():
-    file_name = input("Enter name of the file:")
-    file_name += ".txt"
+def main() -> None:
+    file_name = input("Enter name of the file: ")
+    files_content = []
+    new_line = ""
 
-    content = []
+    while new_line != "stop":
+        new_line = input("Enter new line of content: ")
+        if new_line != "stop":
+            files_content.append(f"{new_line}\n")
 
-    while True:
-        line = input("Enter new line of content:")
-        if line.lower() == "stop":
-            break
-        content.append(line)
-
-    with open(file_name, "w") as file:
-        for line in content:
-            file.write(line + "\n")
-
-    print(f"File '{file_name}' created successfully with the following content:")
-    for line in content:
-        print(line)
+    with open(f"{file_name}.txt", "w") as file:
+        for line in files_content:
+            file.write(line)
 
 
 

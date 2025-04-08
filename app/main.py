@@ -2,7 +2,7 @@ def main() -> None:
     file_name = input("Enter name of the file: ")
     condition_or_content = True
     final_content = ""
-    while condition_or_content is True:
+    while condition_or_content:
         condition_or_content = input("Enter new line of content: ")
         if condition_or_content == "stop":
             condition_or_content = False

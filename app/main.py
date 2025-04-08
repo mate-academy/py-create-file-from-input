@@ -2,8 +2,8 @@ def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
 
     with open(file_name, "a") as file:
-        file.write(f"File name: {file_name}")
-        file.write("File content:")
+        #file.write(f"File name: {file_name}")
+        #file.write("File content:")
         while True:
             baka = input("Enter new line of content: ")
             if baka.lower() == "stop":

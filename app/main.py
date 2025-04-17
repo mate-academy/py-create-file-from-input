@@ -1,8 +1,8 @@
-def main():
+def main() -> None:
     body = ""
     file_name = ""
     while not file_name:
-        file_name = input("Please enter the file name")
+        file_name = input("Enter name of the file: ")
 
     if not file_name.endswith(".txt"):
         file_name += ".txt"
@@ -10,7 +10,7 @@ def main():
     print('Now you will have to fill the file.\nPrint "stop" to finish.')
 
     while True:
-        line = input("Enter data to file")
+        line = input("Enter new line of content: ")
         if line.lower() == "stop":
             break
         body += line + "\n"
@@ -23,6 +23,7 @@ def main():
     print(f"File was saved as {file_name} in working directory.")
 
     return
+
 
 if __name__ == "__main__":
     main()

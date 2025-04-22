@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"  # Ensure `.txt` extension
     with open(file_name, "a") as file:
         while True:
@@ -8,6 +8,7 @@ def main():
             file.write(input_content + "\n")
 
     print(f'File "{file_name}" created successfully.')
+
 
 if __name__ == "__main__":
     main()

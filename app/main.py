@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     text = input("Enter name of the file: ")
     text += ".txt"
     lines = []
@@ -9,9 +9,10 @@ def main():
             break
         lines.append(line)
 
-    with open(text, 'w') as f:
+    with open(text, "w") as f:
         for line in lines:
             f.write(line + "\n")
+
 
 if __name__ == "__main__":
     main()

@@ -1,10 +1,10 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
     lines = []
 
     while True:
         line = input("Enter new line of content: ")
-        if line.lower() == 'stop':
+        if line.lower() == "stop":
             break
         lines.append(line)
 

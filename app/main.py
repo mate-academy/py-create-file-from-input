@@ -8,8 +8,9 @@ def main():
             break
         my_str += temp_str + "\n"
 
-    file = open(file_name, "w")
-    file.write(my_str)
+    new_file = open(file_name, "w")
+    new_file.write(my_str)
+    new_file.close()
 
 
 if __name__ == "__main__":

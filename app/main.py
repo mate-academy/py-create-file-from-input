@@ -3,10 +3,10 @@ def main() -> None:
     print(file_name)
     with open(file_name, "w") as f:
         while True:
-            written = input("Enter new line of content: ")
-            if written.lower() == "stop":
+            writen = input("Enter new line of content: ")
+            if writen.lower() == "stop":
                 break
-            f.write(f"{written}" + "\n")
+            f.write(f"{writen}" + "\n")
 
 
 if __name__ == "__main__":

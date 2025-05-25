@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     name = input("Enter name of the file: ")
     content = []
     while True:
@@ -10,6 +10,7 @@ def main():
     with open(f"{name}.txt", "w") as file:
         for line in content:
             file.write(line + "\n")
+
 
 if __name__ == "__main__":
     main()

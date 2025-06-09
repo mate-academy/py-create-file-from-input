@@ -11,17 +11,17 @@ def main() -> None:
         content.append(line)
 
     # Записуємо вміст у файл
-    with open(filename, 'w') as file:
-        file.write('\n'.join(content))
+    with open(filename, "w") as file:
+        file.write("\n".join(content))
 
     # Читаємо файл і шукаємо слова на w/W
     w_words = []
-    with open(filename, 'r') as file:
+    with open(filename, "r") as file:
         text = file.read()
         words = text.split()
 
         for word in words:
-            if word.lower().startswith('w'):
+            if word.lower().startswith("w"):
                 w_words.append(word.lower())
 
     w_words.sort()

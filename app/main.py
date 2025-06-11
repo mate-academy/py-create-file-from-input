@@ -11,5 +11,6 @@ def main() -> None:
         for i in lines:
             f.write(i + "\n")
 
+
 if __name__ == "__main__":
     main()

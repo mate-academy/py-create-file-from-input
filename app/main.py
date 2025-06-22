@@ -3,7 +3,7 @@ def main() -> None:
     file_name = file_name + ".txt"
     file_result = open(file_name, "w")
     while True:
-        user_input = input()
+        user_input = input("write line")
         if user_input.strip().lower() == "stop":
             file_result.close()
             break

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
 
     lines = []
@@ -16,4 +16,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

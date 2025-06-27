@@ -1,5 +1,5 @@
 def main() -> None:
-    file = input(f"Enter name of the file: ") + ".txt"
+    current_file = input(f"Enter name of the file: ") + ".txt"
 
     new_lines = []
     while True:
@@ -8,7 +8,7 @@ def main() -> None:
             break
         new_lines.append(new_line)
 
-    with open(file, "w") as f:
+    with open(current_file, "w") as f:
         for line in new_lines:
             f.write(line + "\n")
 

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
     full_file_name = f"{file_name}.txt"
 
@@ -13,7 +13,7 @@ def main():
         for line in lines:
             f.write(line + "\n")
 
-    print(f"File \"{full_file_name}\" created successfully.")
+    print(f'File "{full_file_name}" created successfully.')
 
 
 if __name__ == "__main__":

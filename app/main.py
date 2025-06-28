@@ -9,12 +9,13 @@ def main():
             break
         lines.append(line)
 
-    with open(full_file_name, 'w', encoding='utf-8') as f:
+    with open(full_file_name, "w", encoding="utf-8") as f:
         for line in lines:
-            f.write(line + '\n')
+            f.write(line + "\n")
 
-    print(f'File "{full_file_name}" created successfully.')
+    print(f"File \"{full_file_name}\" created successfully.")
 
 
 if __name__ == "__main__":
     main()
+

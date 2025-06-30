@@ -55,4 +55,7 @@ def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
         assert os.path.exists(correct_filename)
 
         with open(correct_filename, "r") as f:
-            assert f.read().splitlines() == content
+             lines = f.read().splitlines()
+             assert lines[0] == f'File name: "{correct_filename}"'
+             assert lines[1] == "File content:"
+             assert lines[2:] == content

@@ -14,6 +14,7 @@ def main() -> None:
     # ask to enter next line of the content
     # in a while loop until user enters `stop`.
 
+
 if __name__ == "__main__":
     main()
 

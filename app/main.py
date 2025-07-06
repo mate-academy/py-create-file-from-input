@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     filename = input("Enter name of the file: ")
 
     content_lines = []
@@ -11,9 +11,9 @@ def main():
 
     file_path = f"{filename}.txt"
 
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         for line in content_lines:
-            file.write(line + '\n')
+            file.write(line + "\n")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     name = input("Enter name of the file: ")
     name += ".txt"
     open(name, "w").close()
@@ -8,6 +8,7 @@ def main():
             break
         with open(name, "a") as file:
             file.write(new_line + "\n")
+
 
 if __name__ == "__main__":
     main()

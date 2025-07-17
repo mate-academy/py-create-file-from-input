@@ -13,5 +13,6 @@ def main():
         for line in lines:
             file.write(line + "\n")
 
+
 if __name__ == "__main__":
     main()

@@ -1,5 +1,4 @@
 import os
-from typing import Any, Optional
 
 import pytest
 from pytest import MonkeyPatch
@@ -8,18 +7,13 @@ from app.main import main
 
 
 class CleanUpFile:
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename: str):
         self.filename = filename
 
-    def __enter__(self) -> "CleanUpFile":
+    def __enter__(self):
         return self
 
-    def __exit__(
-        self,
-        exc_type: Optional[type],
-        exc_val: Optional[Exception],
-        exc_tb: Optional[Any]
-    ) -> None:
+    def __exit__(self, exc_type, exc_val, exc_tb):
         if os.path.exists(self.filename):
             os.remove(self.filename)
 
@@ -33,11 +27,7 @@ class CleanUpFile:
         ),
         (
             "hello_world",
-            [
-                "Python is great!",
-                "FastApi is becoming popular",
-                "What will be with Django in the future?"
-            ]
+            ["Python is great!", "FastApi is becoming popular", "What will be with Django in the future?"]
         ),
         (
             "i_am_empty",
@@ -45,13 +35,11 @@ class CleanUpFile:
         ),
     ]
 )
-def test_main(
-    file_basename: str, content: list, monkeypatch: MonkeyPatch
-) -> None:
+def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
     inputs = [file_basename, *content, "stop"]
     input_messages = []
 
-    def mock_input(text: str) -> str:
+    def mock_input(text: str):
         input_messages.append(text)
         return inputs.pop(0)
 
@@ -62,11 +50,7 @@ def test_main(
     with CleanUpFile(correct_filename):
         main()
 
-        expected_messages = (
-            ["Enter the name of the file: "]
-            + ["Enter new line of content: "] * (len(content) + 1)
-        )
-        assert input_messages == expected_messages
+        assert input_messages == ["Enter name of the file: "] + ["Enter new line of content: "] * (len(content) + 1)
 
         assert os.path.exists(correct_filename)
 

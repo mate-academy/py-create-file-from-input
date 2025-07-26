@@ -2,7 +2,7 @@ import os
 
 
 def main() -> None:
-    file_name = input("Enter the name of the file: ")
+    file_name = input("Enter name of the file: ")
     full_file_name = f"{file_name}.txt"
 
     if os.path.exists(full_file_name):

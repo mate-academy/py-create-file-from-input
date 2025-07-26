@@ -28,10 +28,10 @@ def main() -> None:
         for line in lines:
             file.write(line + "\n")
 
-    print(f'File "{full_file_name}" created successfully.')
+    print(f"File '{full_file_name}' created successfully.")
     print(
-        f'Total lines: {len(lines)} | Words: {total_words} | '
-        f'Characters: {total_chars}'
+        f"Total lines: {len(lines)} | Words: {total_words} | "
+        f"Characters: {total_chars}"
     )
 
 

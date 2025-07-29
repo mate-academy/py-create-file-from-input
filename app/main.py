@@ -10,7 +10,7 @@ def main() -> None:
     with open(file_name, "w") as file:
         for line in lines:
             file.write(line + "\n")
-    print(f"File name: \"{file_name}\"")
+    print(f'File name: "{file_name}"')
     print("File content:")
     for line in lines:
         print(line)

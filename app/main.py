@@ -1,15 +1,15 @@
 def main():
-     file_name = input("Enter name of the file: ").strip()
-     full_name = f"{file_name}.txt"
+    file_name = input("Enter name of the file: ").strip()
+    full_name = f"{file_name}.txt"
 
-     lines = []
-     while True:
+    lines = []
+    while True:
         line = input("Enter new line of content: ")
         if line.lower() == 'stop':
             break
         lines.append(line)
 
-     with open(full_name, 'w', encoding='utf-8') as f:
+    with open(full_name, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
 
     print(f"File '{full_name}' created successfully.")
@@ -17,4 +17,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

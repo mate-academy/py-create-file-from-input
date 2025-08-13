@@ -11,7 +11,7 @@ def main() -> None:
             stop = True
         else:
             content += "\n"
-            with open(f"../{file_name}", "a") as output_file:
+            with open(file_name, "a") as output_file:
                 output_file.write(content)
 
 

@@ -1,8 +1,8 @@
 def main() -> None:
-    file_name = input("name of the file: ")
+    file_name = input("Enter name of the file: ")
     stop = False
 
-    if file_name[len(file_name) - 4:] != "txt":
+    if not file_name.endswith(".txt"):
         file_name += ".txt"
 
     while not stop:
@@ -13,7 +13,6 @@ def main() -> None:
             content += "\n"
             with open(f"../{file_name}", "a") as output_file:
                 output_file.write(content)
-                output_file.close()
 
 
 if __name__ == "__main__":

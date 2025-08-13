@@ -1,5 +1,5 @@
-def main():
-    # Pede o nome do arquivo
+def main() -> None:
+    """Solicita ao usuário um nome de arquivo e conteúdo, criando o arquivo .txt."""
     file_name = input("Enter name of the file: ").strip()
     if not file_name.endswith(".txt"):
         file_name += ".txt"
@@ -19,7 +19,5 @@ def main():
             f.write(line + "\n")
 
 
-# Permite rodar diretamente pelo terminal
 if __name__ == "__main__":
     main()
-

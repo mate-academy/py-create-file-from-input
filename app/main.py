@@ -4,8 +4,6 @@ def main():
         if file_name.strip():
             break
     content = []
-    print("\nEnter new line of content: ")
-    print("For the end input 'stop'.")
     while True:
         line = input("Enter new line of content: ")
         if line.lower() == 'stop':

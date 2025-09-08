@@ -3,7 +3,7 @@ def main() -> None:
 
     result = ""
     while True:
-        inp = input("Enter new line of content (or 'stop' to finish): ")
+        inp = input("Enter new line of content: ")
         if inp == "stop":
             break
         if result == "":

@@ -11,6 +11,9 @@ def main() -> None:
         else:
             result += "\n" + inp
 
+    if not file_name.endswith(".txt"):
+        file_name += ".txt"
+
     with open(file_name, "w") as f:
         f.write(result)
 

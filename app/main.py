@@ -1,11 +1,16 @@
-def main():
-    inp = input("Enter name of the file:")
-    file_name = inp
-    result: str
-    while inp != "stop":
-        inp = input("Enter new line of content:")
-        if inp != "stop":
-            result = result + "\n" + inp
+def main() -> None:
+    file_name = input("Enter name of the file: ")
+
+    result = ""
+    while True:
+        inp = input("Enter new line of content (or 'stop' to finish): ")
+        if inp == "stop":
+            break
+        if result == "":
+            result = inp
+        else:
+            result += "\n" + inp
+
     with open(file_name, "w") as f:
         f.write(result)
 

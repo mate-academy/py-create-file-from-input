@@ -1,6 +1,21 @@
-def main():
-    # write your code here
-    pass
+def main() -> None:
+    file_name = input("Enter name of the file: ")
+
+    result = ""
+    while True:
+        inp = input("Enter new line of content: ")
+        if inp == "stop":
+            break
+        if result == "":
+            result = inp
+        else:
+            result += "\n" + inp
+
+    if not file_name.endswith(".txt"):
+        file_name += ".txt"
+
+    with open(file_name, "w") as f:
+        f.write(result)
 
 
 if __name__ == "__main__":

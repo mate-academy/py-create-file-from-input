@@ -14,5 +14,6 @@ def main() -> None:
     with open(file_name, "w") as f:
         f.write(result)
 
+
 if __name__ == "__main__":
     main()

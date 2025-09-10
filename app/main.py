@@ -11,7 +11,5 @@ def main() -> None :
         for text in new_text:
             text_file.write(f"{text}\n")
 
-
-
 if __name__ == "__main__":
     main()

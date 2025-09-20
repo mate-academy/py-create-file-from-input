@@ -1,4 +1,6 @@
-def main():
+# read_from_file.py
+
+def read_from_file():
     file_name = input("Enter name of the file: ") + ".txt"
     content = []
 
@@ -14,4 +16,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    read_from_file()

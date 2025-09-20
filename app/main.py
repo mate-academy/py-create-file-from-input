@@ -1,5 +1,3 @@
-# app/main.py
-
 def main():
     file_name = input("Enter name of the file: ") + ".txt"
     content = []

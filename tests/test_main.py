@@ -39,8 +39,8 @@ def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
     inputs = [file_basename, *content, "stop"]
     input_messages = []
 
-    def mock_input(text: str):
-        input_messages.append(text)
+    def mock_input(prompt: str = ""):
+        input_messages.append(prompt)
         return inputs.pop(0)
 
     monkeypatch.setattr("builtins.input", mock_input)

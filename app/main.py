@@ -18,7 +18,7 @@ def create_file_from_input() -> None:
         for line in content_lines:
             f.write(line + "\n")
 
-    print(f'File "{full_file_name}" created successfully with {len(content_lines)} lines.')
-
-# Executa a função
-create_file_from_input()
+    print(
+        f'File "{full_file_name}" created successfully with '
+        f'{len(content_lines)} lines.'
+    )

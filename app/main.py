@@ -15,5 +15,3 @@ def main():
     # Записуємо у файл
     with open(file_name, "w", encoding="utf-8") as f:
         f.write("\n".join(content_lines))
-
-

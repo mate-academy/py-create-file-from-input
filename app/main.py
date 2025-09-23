@@ -1,22 +1,23 @@
 def main():
-    # Питаємо ім'я файлу
-    file_name = input("Enter name of the file: ") + ".txt"
+    # Запитуємо назву файлу
+    file_name = input("Enter name of the file: ").strip() + ".txt"
 
-    content = []
-
-    # Запит рядків у циклі
+    # Збираємо вміст
+    content_lines = []
     while True:
         line = input("Enter new line of content: ")
-        if line == "stop":
+        if line.lower() == "stop":
             break
-        content.append(line)
+        content_lines.append(line)
 
-    # Запис у файл
-    with open(file_name, "w") as f:
-        for line in content:
-            f.write(line + "\n")
+    # Записуємо у файл
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write("\n".join(content_lines))
+
+    print(f'File "{file_name}" has been created.')
 
 
 if __name__ == "__main__":
     main()
+
 

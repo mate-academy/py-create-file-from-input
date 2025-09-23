@@ -1,1 +1,1 @@
-#порожній файл
+# This is an empty package

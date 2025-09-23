@@ -22,5 +22,3 @@ def create_file_from_input() -> None:
         f"File '{full_file_name}' created successfully with "
         f"{len(content_lines)} lines."
     )
-    
-

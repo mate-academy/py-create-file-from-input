@@ -20,5 +20,5 @@ def create_file_from_input() -> None:
     )
 
 
-def main():
+def main() -> None:
     create_file_from_input()

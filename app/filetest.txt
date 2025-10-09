@@ -1,4 +1,0 @@
-# File name: "filetest.txt"
-# File content:
-# test
-# test

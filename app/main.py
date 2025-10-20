@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     content_lines = []
     print("Enter your content. Type 'stop' on a new line to finish.")

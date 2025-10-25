@@ -5,4 +5,4 @@ def main(content: list, file_basename: str) -> None:
 
 
 if __name__ == "__main__":
-    main([], "")
+    main()

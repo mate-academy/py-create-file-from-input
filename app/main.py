@@ -3,5 +3,6 @@ def main(content: list, file_basename: str) -> None:
         for line in content:
             f.write(line + "\n")
 
+
 if __name__ == "__main__":
     main([], "")

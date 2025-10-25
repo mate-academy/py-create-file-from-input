@@ -9,7 +9,7 @@ def main():
     if not file_name.lower().endswith(".txt"):
         file_name += ".txt"
 
-    print("Enter new line of content (type 'stop' to finish):")
+    print("Enter new line of content: stop")
 
     lines = []
     while True:

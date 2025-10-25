@@ -1,7 +1,6 @@
-def main():
+def main() -> None:
     file_name = input(
-       "Enter name of the file: "
-    ).strip()
+        "Enter name of the file: ").strip()
     if not file_name:
         print("file name can't be empty. Program complete")
         return

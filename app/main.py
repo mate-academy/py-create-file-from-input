@@ -1,5 +1,8 @@
-def main():
-    """Main function to collect filename and content, then write to a .txt file."""
+def main() -> None:
+    """
+    Main function to collect filename and content,
+    then write to a .txt file.
+    """
     file_name = input("Enter name of the file: ").strip()
     if not file_name:
         print("File name cannot be empty.")

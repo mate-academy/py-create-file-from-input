@@ -11,10 +11,10 @@ def main() -> None:
             break
         lines.append(line)
 
-    file = open(full_name, "w", encoding="utf-8")
+    output_file = open(full_name, "w", encoding="utf-8")
     for line in lines:
-        file.write(line + "\n")
-    file.close()
+        output_file.write(line + "\n")
+    output_file.close()
 
     print(f'File "{full_name}" was created successfully!')
 

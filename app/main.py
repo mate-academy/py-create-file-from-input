@@ -1,5 +1,5 @@
 def main() -> None:
-    filename = input("Enter name of the file:") + '.txt'
+    filename = input("Enter name of the file:") + ".txt"
     lines = []
     while True:
         content = input("Enter new line of content:")

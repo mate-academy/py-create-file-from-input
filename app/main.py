@@ -13,7 +13,7 @@ def main() -> None:
         for line in lines:
             file.write(line + "\n")
 
-    print(f"File \"{file_name}\" created successfully.")
+    print(f'File "{file_name}" created successfully.')
 
 
 if __name__ == "__main__":

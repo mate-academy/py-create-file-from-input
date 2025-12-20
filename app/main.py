@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_basename = input("Enter name of the file: ")
     filename = file_basename + ".txt"
 
@@ -10,9 +10,9 @@ def main():
             break
         lines.append(line)
 
-    file = open(filename, "w")
-    file.write("\n".join(lines))
-    file.close()
+    text_file = open(filename, "w")
+    text_file.write("\n".join(lines))
+    text_file.close()
 
 
 if __name__ == "__main__":

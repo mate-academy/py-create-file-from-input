@@ -1,17 +1,19 @@
+from datetime import datetime
+from time import sleep
+
+
 def main():
-    file_name = input("Enter name of the file: ").strip()
-    if not file_name.lower().endswith(".txt"):
-        file_name += ".txt"
-    
-    lines = []
     while True:
-        entry = input("Enter new line of content: ")
-        if entry.strip().lower() == "stop":
-            break
-        lines.append(entry)
-    
-    with open(file_name, "w") as f:
-        f.writelines(line + "\n" for line in lines)
+        now = datetime.now()
+        filename = f"app-{now.hour}_{now.minute}_{now.second}.log"
+        content = now.strftime("%Y-%m-%d %H:%M:%S")
+
+        with open(filename, "w") as f:
+            f.write(content)
+
+        print(f"{content} {filename}")
+        sleep(1)
+
 
 if __name__ == "__main__":
     main()

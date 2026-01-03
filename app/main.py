@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
     full_name = f"{file_name}.txt"
 
@@ -9,9 +9,9 @@ def main():
             break
         lines.append(line)
 
-    with open(full_name, "w", encoding="utf-8") as f:
+    with open(full_name, "w", encoding="utf-8") as file:
         if lines:
-            f.write("\n".join(lines))
+            file.write("\n".join(lines))
 
 
 if __name__ == "__main__":

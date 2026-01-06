@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
     with open(file_name + ".txt", "w") as file:
         while True:

@@ -7,7 +7,7 @@ def main() -> None:
     content: list[str] = []
 
     while True:
-        line = input("Enter new line of content: ")
+        line = input("new line of content:")
         if line == "stop":
             break
         content.append(line)

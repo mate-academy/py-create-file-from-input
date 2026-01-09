@@ -9,7 +9,5 @@ def main():
             file.write(line)
     file.close()   
 
-
-
 if __name__ == "__main__":
     main()

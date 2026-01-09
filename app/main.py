@@ -6,7 +6,7 @@ def main() -> None:
         if line == "stop":
             break
         else:
-            outfile.write(line)
+            outfile.write(line + "\n")
     outfile.close()
 
 

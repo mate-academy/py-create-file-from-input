@@ -7,7 +7,7 @@ def main():
             break
         else:
             outfile.write(line)
-    outfile.close()   
+    outfile.close()
 
 
 if __name__ == "__main__":

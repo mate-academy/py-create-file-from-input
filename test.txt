@@ -1,0 +1,24 @@
+name1This is the first line of contentThis is the secondstophello_worldPython is great!FastApi is becoming popularWhat will be with Django in the future?stopi_am_emptystopname1
+This is the first line of content
+This is the second
+hello_world
+Python is great!
+FastApi is becoming popular
+What will be with Django in the future?
+i_am_empty
+name1
+This is the first line of content
+This is the second
+hello_world
+Python is great!
+FastApi is becoming popular
+What will be with Django in the future?
+i_am_empty
+name1
+This is the first line of content
+This is the second
+hello_world
+Python is great!
+FastApi is becoming popular
+What will be with Django in the future?
+i_am_empty

@@ -1,4 +1,4 @@
-def main():
+def main() -> str:
     file_name = input("Enter name of the file: ")
     print(file_name)
     output_file = open(f"{file_name}.txt", "a")

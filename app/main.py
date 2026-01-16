@@ -6,11 +6,16 @@ def create_file_from_input() -> None:
         if line.lower() == "stop":
             break
         content_lines.append(line)
+    
     full_file_name = f"{file_name}.txt"
     with open(full_file_name, "w") as file:
         for line in content_lines:
             file.write(line + "\n")
 
 
-if __name__ == "__main__":
+def main() -> None:
     create_file_from_input()
+
+
+if __name__ == "__main__":
+    main()

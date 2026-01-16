@@ -6,7 +6,7 @@ def create_file_from_input() -> None:
         if line.lower() == "stop":
             break
         content_lines.append(line)
-    
+
     full_file_name = f"{file_name}.txt"
     with open(full_file_name, "w") as file:
         for line in content_lines:

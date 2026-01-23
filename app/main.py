@@ -7,12 +7,12 @@ def main() -> None:
     while True:
         line = input("Enter new line of content: ")
         if line == "stop":
-                break
+            break
         lines.append(line)
 
     with open(file_name, "w") as f:
         for line in lines:
-            f.write(line + '\n')
+            f.write(line + "\n")
 
 
 if __name__ == "__main__":

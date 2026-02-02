@@ -3,9 +3,9 @@ def main() -> None:
     content = ""
 
     while content != "stop":
-        content = input("Enter new line of content: ")
-        if content != "stop":
-            with open(file_name, "a") as file:
+        with open(file_name, "a") as file:
+            content = input("Enter new line of content: ")
+            if content != "stop":
                 file.write(content + "\n")
 
 

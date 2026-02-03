@@ -3,7 +3,7 @@ class EmptyNameError(ValueError):
         return "Filename cannot be empty, please provide a name."
 
 
-def main():
+def main() -> None:
     try:
         file_name = input("Enter name of the file: ")
 

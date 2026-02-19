@@ -1,6 +1,7 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
-    lines = []
+    lines: list[str] = []
+
     while True:
         line = input("Enter new line of content: ")
         if line == "stop":
@@ -11,5 +12,7 @@ def main():
         for line in lines:
             file.write(line + "\n")
 
+
 if __name__ == "__main__":
     main()
+

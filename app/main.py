@@ -5,7 +5,10 @@ def main() -> None:
     file_basename = input("Enter name of the file: ").strip()
 
     # тест ожидает, что мы создадим именно "<basename>.txt"
-    filename = file_basename if file_basename.endswith(".txt") else f"{file_basename}.txt"
+    filename = (
+        file_basename if file_basename.endswith(".txt")
+        else f"{file_basename}.txt"
+    )
 
     with open(filename, "w", encoding="utf-8") as file:
         while True:

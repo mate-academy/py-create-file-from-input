@@ -1,10 +1,10 @@
 def main():
-    file_name = input("Enter file name: ")
-    with open(file_name + ".txt", "w+") as f:
+    file_basename = input("Enter name of the file: ")
+    with open(file_basename + ".txt", "w+") as f:
         while True:
+            content = input("Enter new line of content: ")
             if content == "stop":
                 break
-            content = input("Enter file content (for stop, enter 'stop'): ")
             f.write(content + "\n")
 
 

@@ -1,4 +1,7 @@
-from app.main import create_file_from_input as main
+import os
+
+import pytest
+from app.main import main
 
 
 class CleanUpFile:
@@ -30,7 +33,7 @@ class CleanUpFile:
         ),
     ]
 )
-def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
+def test_main(file_basename: str, content: list, monkeypatch):
     inputs = [file_basename, *content, "stop"]
     input_messages = []
 

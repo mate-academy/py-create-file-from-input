@@ -1,7 +1,7 @@
 def create_file_from_input() -> None:
     file_name = input("Enter name of the file: ")
 
-    full_path = f"{file_name}.txt"
+    full_name = f"{file_name}.txt"
 
     content_lines = []
 
@@ -13,11 +13,13 @@ def create_file_from_input() -> None:
 
         content_lines.append(line)
 
-    with open(full_path, "w") as file:
+    with open(full_name, "w") as file:
         file.write("\n".join(content_lines))
 
-    print(f"File '{full_path}' has been created successfully.")
+
+def main() -> None:
+    create_file_from_input()
 
 
 if __name__ == "__main__":
-    create_file_from_input()
+    main()

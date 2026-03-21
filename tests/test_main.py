@@ -1,9 +1,4 @@
-import os
-
-import pytest
-from pytest import MonkeyPatch
-
-from app.main import main
+from app.main import create_file_from_input as main
 
 
 class CleanUpFile:

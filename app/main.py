@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     name_file = input("Enter name of the file: ")
 
     if name_file == "":

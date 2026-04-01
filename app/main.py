@@ -9,5 +9,7 @@ def main() -> None:
                 break
             f.write(f"{line}\n")
 
+
 if __name__ == "__main__":
     main()
+    

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     if not file_name.endswith(".txt"):
         file_name += ".txt"
@@ -8,10 +8,6 @@ def main():
             if line.lower() == "stop":
                 break
             f.write(f"{line}\n")
-
-
-
-
 
 if __name__ == "__main__":
     main()

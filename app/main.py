@@ -1,5 +1,5 @@
-def main():
-    name = input(f"Enter name of the file: ")
+def main() -> None:
+    name = input("Enter name of the file: ")
     name = name + ".txt"
     new_list = []
     while True:
@@ -13,6 +13,7 @@ def main():
             file.write(
                 f"{line}\n"
             )
+
 
 if __name__ == "__main__":
     main()

@@ -13,5 +13,6 @@ def main() -> None:
     with open(user_file, "w") as f:
         f.write("\n".join(content))
 
+
 if __name__ == "__main__":
     main()

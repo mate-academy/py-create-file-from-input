@@ -10,9 +10,9 @@ def main() -> None:
 
         content.append(line)
 
-    with open(f"{file_name}.txt", "w") as f:
+    with open(f"{file_name}.txt", "w") as file:
         for line in content:
-            f.write(line + "\n")
+            file.write(line + "\n")
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ def main():
         line = input("Enter new line of content: ")
         if line == "stop":
             break
-        lines.append(line + '\n')
+        lines.append(line + "\n")
 
     with open(file_name_txt, "w") as f:
         f.writelines(lines)

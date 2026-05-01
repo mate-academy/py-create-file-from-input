@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     file_name_txt = file_name + ".txt"
     lines = []

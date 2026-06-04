@@ -1,5 +1,5 @@
 def main():
-    file_name = input("Ented namae of the file")
+    file_name = input("Enter name of the file: ")
 
     content = []
 

@@ -8,6 +8,7 @@ def main():
 
         if line == "stop":
             break
+        
         content. append(line)
 
     with open(f"{file_name}.txt", "w") as file:

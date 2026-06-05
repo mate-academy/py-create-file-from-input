@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     title = input("Enter name of the file: ")
     title += ".txt"
     content_input = []

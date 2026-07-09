@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     nome_arquivo = input("Digite o nome do arquivo: ")
     nome_arquivo += ".txt"
     conteudo = []

@@ -1,10 +1,10 @@
 def main() -> None:
-    nome_arquivo = input("Digite o nome do arquivo: ")
+    nome_arquivo = input("Enter name of the file: ")
     nome_arquivo += ".txt"
     conteudo = []
 
     while True:
-        linha = input("Digite uma linha: ")
+        linha = input("Enter new line of content: ")
         if linha == "stop":
             break
         conteudo.append(linha)

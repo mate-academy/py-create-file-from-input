@@ -1,24 +1,18 @@
 def main() -> None:
-    file_name = input("Enter name of the file: ").strip()
+    file_name = input("Enter name of the file: ")
 
-    if not file_name.endswith(".txt"):
-        file_name += ".txt"
-
-    content_lines = []
+    lines = []
 
     while True:
         line = input("Enter new line of content: ")
-        if line.strip().lower() == "stop":
+
+        if line == "stop":
             break
 
-        content_lines.append(line)
+        lines.append(line)
 
-    try:
-        with open(file_name, "w", encoding="utf-8") as file:
-            file.write("\n".join(content_lines))
-        print(f"\n# File '{file_name}' was successfully created!")
-    except Exception as e:
-        print(f"An error occurred while creating the file: {e}")
+    with open(f"{file_name}.txt", "w") as file:
+        file.write("\n".join(lines))
 
 
 if __name__ == "__main__":

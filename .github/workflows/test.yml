@@ -5,6 +5,10 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    # Явно даем права на запись для пулл-реквестов и содержимого репозитория
+    permissions:
+      pull-requests: write
+      contents: write
 
     steps:
       - name: Checkout repo

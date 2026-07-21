@@ -5,10 +5,8 @@ def main() -> None:
 
     while True:
         line = input("Enter new line of content: ")
-
         if line == "stop":
             break
-
         lines.append(line)
 
     with open(f"{file_name}.txt", "w") as file:

@@ -56,3 +56,4 @@ def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
 
         with open(correct_filename, "r") as f:
             assert f.read().splitlines() == content
+

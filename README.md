@@ -16,7 +16,8 @@ Enter name of the file: name1
 Enter new line of content: This is the first line of content
 Enter new line of content: This is the second
 Enter new line of content: stop
-# File name: "name1.txt"
+# File name: 
+
 # File content:
 # This is the first line of content
 # This is the second

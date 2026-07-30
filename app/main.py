@@ -1,6 +1,13 @@
-def main():
-    # write your code here
-    pass
+def main(*args, **kwargs) -> None:
+    name_base = input("Enter name of the file: ")
+    if name_base.lower().endswith(".txt"):
+        raise ValueError("File name should not have .txt extension")
+    with open(f"{name_base}.txt", "w") as file:
+        while True:
+            new_line = input("Enter new line of content: ")
+            if new_line == "stop":
+                break
+            file.write(f"{new_line}\n")
 
 
 if __name__ == "__main__":

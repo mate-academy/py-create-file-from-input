@@ -1,8 +1,6 @@
 import os
 
 import pytest
-from pytest import MonkeyPatch
-
 from app.main import main
 
 
@@ -35,7 +33,7 @@ class CleanUpFile:
         ),
     ]
 )
-def test_main(file_basename: str, content: list, monkeypatch: MonkeyPatch):
+def test_main(file_basename: str, content: list, monkeypatch):
     inputs = [file_basename, *content, "stop"]
     input_messages = []
 

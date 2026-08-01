@@ -9,7 +9,7 @@ def main() -> None:
         lines.append(line + "\n")
 
     file_full_name = f"{file_name}.txt"
- 
+
     with open(file_full_name, "w") as f:
         f.writelines(lines)
 

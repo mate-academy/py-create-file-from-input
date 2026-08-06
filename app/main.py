@@ -1,4 +1,7 @@
-def main():
+from typing import Any
+
+
+def main() -> Any:
     file_name = input("Enter name of the file: ") + ".txt"
     file_data = ""
 

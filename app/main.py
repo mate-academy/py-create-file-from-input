@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     file_name += ".txt"
 
@@ -11,6 +11,7 @@ def main():
 
     with open(file_name, "a") as new_file:
         new_file.write(file_content)
+
 
 if __name__ == "__main__":
     main()

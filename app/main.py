@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
 
     lines = []
@@ -11,7 +11,6 @@ def main():
     full_file_name = f"{file_name}.txt"
     with open(full_file_name, "w") as file:
         file.write("\n".join(lines))
-
 
 
 if __name__ == "__main__":

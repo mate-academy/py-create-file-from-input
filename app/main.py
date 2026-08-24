@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     result = ""
     my_list = []
     file_name = input("Enter name of the file: ")

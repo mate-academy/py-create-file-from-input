@@ -8,7 +8,7 @@ def main() -> None:
             break
         lines.append(line)
 
-    with open(name, "w") as f:
+    with open(f"{name}.txt", "w") as f:
         for lin in lines:
             f.write(f"{lin}\n")
 

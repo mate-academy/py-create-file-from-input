@@ -9,5 +9,6 @@ def main() -> None:
     with open(file_name + ".txt", "w") as file:
         file.write("\n".join(content))
 
+
 if __name__ == "__main__":
     main()

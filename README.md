@@ -11,7 +11,7 @@ in a while loop until user enters `stop`.
 fill it with content provided by user. File extension should be `txt`.
 
 Example:
-```python
+```
 Enter name of the file: name1
 Enter new line of content: This is the first line of content
 Enter new line of content: This is the second

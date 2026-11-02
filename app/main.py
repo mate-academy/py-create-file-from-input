@@ -1,27 +1,23 @@
 def criar_arquivo():
-    # Solicita o nome do arquivo ao usuário
+    # Solicita o nome do arquivo
     nome_arquivo = input("Enter name of the file: ")
     
-    # Garante que a extensão seja .txt
+    # Garante que a extensão seja .txt caso não tenha sido informada
     if not nome_arquivo.endswith(".txt"):
         nome_arquivo += ".txt"
     
     linhas = []
     
-    # Loop para coletar o conteúdo até que o usuário digite 'stop'
+    # Loop para capturar o conteúdo até digitar 'stop'
     while True:
         linha = input("Enter new line of content: ")
-        if linha.lower() == "stop":
+        if linha.strip() == "stop":
             break
         linhas.append(linha)
     
-    # Cria o arquivo e escreve o conteúdo coletado
+    # Escreve o conteúdo no arquivo unindo as linhas por '\n' (sem quebra extra no final)
     with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
-        for l in linhas:
-            arquivo.write(l + "\n")
+        arquivo.write("\n".join(linhas))
 
-    print(f"\nArquivo '{nome_arquivo}' criado com sucesso!")
-
-# Executa o aplicativo
 if __name__ == "__main__":
     criar_arquivo()

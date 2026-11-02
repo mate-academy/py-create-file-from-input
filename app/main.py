@@ -1,9 +1,9 @@
-def main():
-    file_name = input("Enter name of the file: ")
-    content = []
+def main() -> None:
+    file_name: str = input("Enter name of the file: ")
+    content: list[str] = []
 
     while True:
-        line = input("Enter new line of content: ")
+        line: str = input("Enter new line of content: ")
 
         if line == "stop":
             break

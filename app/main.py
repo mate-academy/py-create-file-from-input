@@ -1,4 +1,4 @@
-def criar_arquivo() -> None:
+def main() -> None:
     nome_arquivo = input("Enter name of the file: ")
 
     if not nome_arquivo.endswith(".txt"):
@@ -18,4 +18,4 @@ def criar_arquivo() -> None:
 
 
 if __name__ == "__main__":
-    criar_arquivo()
+    main()

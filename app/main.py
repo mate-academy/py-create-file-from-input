@@ -7,7 +7,6 @@ def main() -> None:
             break
         content_list.append(content + "\n")
 
-
     with open(f"{name}.txt", "w") as f:
         f.writelines(content_list)
 

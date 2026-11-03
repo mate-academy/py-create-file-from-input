@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     file_name = input("Enter name of the file: ")
     lines = []
 
@@ -8,9 +8,10 @@ def main():
             break
         lines.append(line + "\n")
 
-    file_fullName = f"{file_name}.txt"
-    with open(file_fullName, "w") as f:
+    file_full_name = f"{file_name}.txt"
+    with open(file_full_name, "w") as f:
         f.writelines(lines)
+
 
 if __name__ == "__main__":
     main()

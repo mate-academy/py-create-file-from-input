@@ -15,7 +15,7 @@ def create_text_file() -> None:
         content_lines.append(line)
 
     full_filename = f"{file_name}.txt"
-    
+
     with open(full_filename, "w", encoding="utf-8") as file:
         file.write("\n".join(content_lines))
 

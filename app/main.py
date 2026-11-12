@@ -24,3 +24,4 @@ def create_text_file() -> None:
 
 if __name__ == "__main__":
     create_text_file()
+

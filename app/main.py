@@ -1,17 +1,21 @@
 from __future__ import annotations
 
 
-def create_text_file() -> None:
+def main() -> None:
     file_name = input("Enter name of the file: ").strip()
+
     if not file_name:
         print("File name cannot be empty.")
         return
 
     content_lines = []
+
     while True:
         line = input("Enter new line of content: ")
+
         if line == "stop":
             break
+
         content_lines.append(line)
 
     full_filename = f"{file_name}.txt"
@@ -23,4 +27,4 @@ def create_text_file() -> None:
 
 
 if __name__ == "__main__":
-    create_text_file()
+    main()
